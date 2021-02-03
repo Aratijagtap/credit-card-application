@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "6870dbfe-05b0-4644-b71d-ae5a452bce26",
+		"name": "credit-card-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/credit-card/new-card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"creditCardNumber\": \"49927398716\",\n    \"name\": \"Sachin\",\n    \"cardLimit\":\"6677.99\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/credit-card/new-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit-card",
+						"new-card"
+					]
+				},
+				"description": "To add new credit card with valid credit card number by Luhn-10 algorithm"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/credit-card/new-card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"creditCardNumber\": \"1358954993914435\",\n    \"name\": \"Mr.John Smith\",\n    \"cardLimit\": 2000.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/credit-card/new-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit-card",
+						"new-card"
+					]
+				},
+				"description": "To add new credit card with valid credit card number by Luhn-10 algorithm"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/credit-card/new-card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"creditCardNumber\": \"1358954993914435+\",\n    \"name\": \"Mr.John Smith\",\n    \"cardLimit\": 2000.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/credit-card/new-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit-card",
+						"new-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/credit-card/new-card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"creditCardNumber\": \"1358954993914435909090909090\",\n    \"name\": \"Mr.John Smith\",\n    \"cardLimit\": 2000.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/credit-card/new-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit-card",
+						"new-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/credit-card/new-card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"creditCardNumber\": \"13589549939144351\",\n    \"name\": \"Mr.John Smith\",\n    \"cardLimit\": 2000.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/credit-card/new-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit-card",
+						"new-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/credit-card/cards",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/credit-card/cards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"credit-card",
+						"cards"
+					]
+				},
+				"description": "To get all existing credit cards."
+			},
+			"response": []
+		}
+	]
+}
